@@ -1,0 +1,7 @@
+{
+    "name": "Publish helm chart",
+    "description": "Template for publishing helm chart to helm-charts repository.",
+    "categories": [
+        "Helm"
+    ]
+}
