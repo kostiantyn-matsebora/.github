@@ -1,3 +1,7 @@
+# Copies README.md to chart and publishes chart to helm-charts repository.
+# Requires:
+# Repository secrets: 
+# - HELM_BOT_GH_TOKEN - token with push permission to helm-charts repository
 name: Publish
 
 on:
@@ -15,7 +19,7 @@ jobs:
     steps:      
       - uses: actions/checkout@v2
       - name: Copy README.md to chart        
-        run: cp README.md charts/simple-oauth2-proxy/
+        run: cp README.md charts/*/
       - name: Publish Helm chart
         if: github.ref == 'refs/heads/master'
         uses: stefanprodan/helm-gh-pages@master        
