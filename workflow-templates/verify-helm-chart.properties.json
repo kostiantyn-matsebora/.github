@@ -1,0 +1,7 @@
+{
+    "name": "Verify helm chart",
+    "description": "Verifies whether Chart.yaml has been changed",
+    "categories": [
+        "Helm"
+    ]
+}
